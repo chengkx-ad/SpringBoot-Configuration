@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试传参注解</title>
+</head>
+<h1>测试@Pathvariable</h1>
+<br><br/>
+<body>
+<a href="/path1/001/ckx">@PathVariable传递参数 要传的参数为/001/ckx</a>
+<br><br/>
+
+<a href="/path2">@RequestHeader获取请求头信息</a>
+<br><br/>
+
+<a href="/path3?name=chengkx&age=30&hobby=GP&hobby=DNF">@RequestParam  获取参数</a>
+<br><br/>
+
+<a href="/path4">@CookieValue 获取cookie的值</a>
+<br><br/>
+
+<hr/>
+<h1>测试@RequestBody 获取数据: 获取 POST 请求体</h1>
+<form action="/path5" method="post">
+    姓名: <input name="name"/> <br>
+    年龄: <input name="age"/> <br/>
+    <input type="submit" value="提交"/>
+</form>
+
+<a href="/path6">@RequestAttribute-获取 request 域属性-</a>
+
+</body>
+</html>

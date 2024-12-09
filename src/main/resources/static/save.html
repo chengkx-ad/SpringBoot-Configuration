@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>添加妖怪</title>
+</head>
+<body>
+<h1>添加妖怪-坐骑[测试封装 POJO；]</h1>
+<form action="/savemonster" method="post">
+编号： <input name="id" value="100"><br/>
+姓名： <input name="name" value="牛魔王"/> <br/>
+年龄： <input name="age" value="120"/> <br/>
+婚否： <input name="isMarried" value="true"/> <br/>
+生日： <input name="birth" value="2000/11/11"/> <br/>
+<!--坐骑：<input name="car.name" value="法拉利"/><br/>-->
+<!--价格：<input name="car.price" value="99999.9"/>-->
+
+<!-- 测试  自定义转换器   -->
+<!--  使用自定义转换器关联car 字符串整体提交-->
+坐骑:<input name="car" value="保时捷,666666"/><br/>
+    <input type="submit" value="保存"/>
+</form>
+</body>
+</html>

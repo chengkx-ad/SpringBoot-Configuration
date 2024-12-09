@@ -1,0 +1,56 @@
+# 配置一个bean对象的属性
+monster:
+  id: 001
+  name: 成凯璇
+  age: 25
+  is-married: false
+  birth: 1999/04/30
+  #对象
+  car: {name: 梅赛德斯, price: 300000}  # 行内
+  #数组
+  skill: [羽毛球, 跑步]
+  #list 也属于数组  所以和数组写法一样
+  hobby:
+    - 抽烟
+    - 喝酒
+  # 对象 map set
+  wife: {wife01: 玉面狐狸, wife02: 铁扇公主}
+  salaries:
+    - 10000
+    - 20000
+  cars:
+    group01:
+      - {name: 宝马, price: 300000}
+      - {name: 法拉利, price: 700000}
+    group02:
+      - {name: 奔驰, price: 400000}
+      - {name: 小米su7, price: 188888}
+
+# 与静态资源相关的配置
+spring:
+  # 配置静态资源的访问路径
+  mvc:
+    #static-path-pattern: /ckx/**
+    # 配置打开REST过滤器 默认是关闭的
+    hiddenmethod:
+      filter:
+        enabled: true
+    view:
+      #prefix: /ckx/
+      suffix: .html
+      prefix: /
+  # 增加默认访问路径
+  # 这样配置以后，原本的四个默认路径就被覆盖了，所以需要什么静态资源路径都得自己配置，除非只用默认的
+  web:
+    resources:
+      static-locations: [classpath:/chengk/, "classpath:/META-INF/resources/",
+                         "classpath:/resources/", "classpath:/static/", "classpath:/public/"]
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>rest</title>
+</head>
+<body>
+<h1>测试 rest 风格的 url, 来完成请求.</h1>
+<form action="/animal" method="post">
+  u: <input type="text" name="name"><br/>
+  <!--如果要测试 delete, put , 就打开下面的注释-->
+   <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="点击提交">
+</form>
+</body>
+</html>
