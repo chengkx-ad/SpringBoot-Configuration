@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="monster02" class="com.chengkx.bean.Monster">
+        <property name="name" value="成凯璇"></property>
+        <property name="id" value="001"></property>
+        <property name="age" value="25"></property>
+        <property name="skill" value="写代码"></property>
+    </bean>
+
+</beans>
